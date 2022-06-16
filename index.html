@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="widget">
+      <div class="upperControlls">
+        <div class="clock">
+          <span class="material-symbols-outlined">schedule</span>
+          <div>
+            <div class="digits">
+              <span class="backgroundDigits">8888</span>
+              <span class="foregroundDigits">100</span>
+            </div>
+            <span class="unit">MIN</span>
+          </div>
+        </div>
+        <div class="navControllers">
+          <div class="upperNavControllers">
+            <button class="uperNavControllersButton">
+              <img src="./src/up.svg" height="15" width="15" />
+            </button>
+            <button class="uperNavControllersButton">
+              <img src="./src/down.svg" height="15" width="15" />
+            </button>
+          </div>
+          <div class="lowerNavButtonContainer">
+            <button class="lowerNavButton">
+              <div class="lowerNavButtonDot"></div>
+              PWR
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="lowerControlls">
+        <div class="togglerContainer">
+          <span class="togglerLabel">MIN</span>
+          <button id="togglerButton" class="togglerButton">
+            <div id="togglerPin" class="togglerPin"></div>
+          </button>
+          <span class="togglerLabel">HRS</span>
+        </div>
+        <div class="sliderContainer">
+          <div class="sliderLine">
+            <div class="sliderFiller"></div>
+            <div class="sliderPin"></div>
+          </div>
+          <div class="sliderRule">
+            <div class="sliderRuleLongStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleLongStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleLongStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleLongStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleLongStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleLongStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleLongStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleLongStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleLongStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleLongStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleShortStripe"></div>
+            <div class="sliderRuleLongStripe"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const togglerButton = document.getElementById("togglerButton");
+      togglerButton.addEventListener("click", () => {
+        if (togglerButton.style.justifyContent === "end") {
+          togglerButton.style.justifyContent = "start";
+        } else {
+          togglerButton.style.justifyContent = "end";
+        }
+      });
+    </script>
+  </body>
+</html>

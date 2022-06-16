@@ -1,0 +1,262 @@
+@font-face {
+  font-family: seventDigitFont;
+  src: url(src/DS-DIGIB.TTF);
+}
+
+html {
+  background-color: #282828;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.widget {
+  width: 390px;
+  background-color: #303131;
+  background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+  -webkit-box-shadow: 0px 0px 9px -3px #000000;
+  box-shadow: 0px 0px 9px 0px #1a191c, 0px -4px 3px -3px white;
+  border-radius: 5px;
+  padding: 45px;
+}
+
+.upperControlls {
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.clock {
+  border-radius: 5px;
+  display: flex;
+  width: 255px;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #29292c;
+  color: #cef7f8;
+  font-family: seventDigitFont;
+  text-shadow: 0px 0px 15px #c3f6f7;
+  padding: 20px;
+  box-shadow: inset 0 2px 5px #000000, 0px 4px 2px -1px #505153,
+    inset 0 10px 50px -10px black;
+}
+
+.digits {
+  position: relative;
+  line-height: 50px;
+  display: inline-block;
+  font-size: 60px;
+  height: 45px;
+  margin-right: 5px;
+}
+
+.backgroundDigits {
+  position: absolute;
+  color: #1f1f21;
+  right: 0;
+  text-shadow: none;
+  z-index: 1;
+}
+
+.foregroundDigits {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+}
+
+.unit {
+  font-size: 30px;
+}
+
+.material-symbols-outlined {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.lowerControlls {
+  margin-top: 30px;
+  align-items: center;
+  display: flex;
+}
+
+.togglerContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.togglerLabel {
+  color: #adaeaf;
+  font-size: 13px;
+}
+
+.togglerLabel:first-child {
+  margin-right: 10px;
+}
+
+.togglerLabel:last-child {
+  margin-left: 10px;
+}
+
+.togglerButton {
+  all: unset;
+  width: 35px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #292a2b;
+  border: none;
+  padding-left: 4px;
+  padding-right: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+  box-shadow: inset 0px 0px 10px rgb(21, 21, 21),
+    0px 1px 2px -1px rgb(145, 145, 145);
+}
+
+.togglerPin {
+  background-color: #c6c7c7;
+  height: 18px;
+  width: 18px;
+  border-radius: 9px;
+}
+
+.sliderContainer {
+  position: relative;
+  flex: 1;
+  margin-left: 20px;
+  display: flex;
+  height: 30px;
+}
+
+.sliderLine {
+  position: absolute;
+  left: 0;
+  border-radius: 10px;
+  top: calc(50% - 10px);
+  width: 100%;
+  height: 6px;
+  background-color: #222122;
+  box-shadow: 0px 1.3px 1px -1px rgb(137, 137, 137), inset 0px 0px 2px black;
+  cursor: pointer;
+}
+
+.sliderPin {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 7.5px;
+  background-color: #c6c7c7;
+  transform: translateY(-5px) translateX(-7px);
+  left: 40%;
+  box-shadow: 0px 0px 3px 0px rgb(32, 32, 32);
+}
+
+.sliderFiller {
+  background-color: #9dd3e1;
+  position: absolute;
+  border-radius: 10px;
+  top: 0.5px;
+  left: 0.5px;
+  height: calc(100% - 1px);
+  box-shadow: inset 0px 0px 2px white;
+  width: 40%;
+}
+
+.sliderRule {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  top: calc(75% - 5px);
+  width: 100%;
+  height: 2px;
+}
+
+.sliderRuleLongStripe {
+  height: 10px;
+  width: 2px;
+  background-color: #696969;
+}
+
+.sliderRuleShortStripe {
+  height: 5px;
+  width: 2px;
+  background-color: #696969;
+}
+
+.navControllers {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.upperNavControllers {
+  display: flex;
+  background-color: #313131;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: inset 0px 2px 10px -1px black, 0px 2px 2px -1px rgb(103, 103, 103);
+}
+
+.uperNavControllersButton {
+  all: unset;
+  width: 30px;
+  height: 30px;
+  border-radius: 2.5px;
+  background-color: #343435;
+  box-shadow: 0px 1px 6px -1px black, 0px -2px 2px -2px rgb(163, 163, 163);
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uperNavControllersButton:last-child {
+  margin-left: 0px;
+}
+
+.lowerNavButton {
+  all: unset;
+  margin-top: auto;
+  flex: 1;
+  border-radius: 4px;
+  margin: 5px;
+  height: 30px;
+  background-color: #343435;
+  font-size: 13px;
+  cursor: pointer;
+  box-shadow: 0px 1px 6px -1px black, 0px -2px 2px -2px rgb(163, 163, 163);
+}
+
+.lowerNavButtonContainer {
+  overflow: hidden;
+  background-color: #363636;
+  display: flex;
+  border-radius: 2.5px;
+  box-shadow: inset 0px 2px 10px -1px black, 0px 2px 2px -1px rgb(103, 103, 103);
+}
+
+.lowerNavButton {
+  display: flex;
+  align-items: center;
+  color: #c6c6c6;
+  justify-content: center;
+}
+
+.lowerNavButtonDot {
+  height: 10px;
+  width: 10px;
+  border-radius: 5.5px;
+  background-color: #96cedf;
+  box-shadow: inset 0px 0px 1px rgb(0, 0, 0), 0px 0px 1px 1px rgb(0, 0, 0),
+    0px 0px 5px 1px #9dd3e1;
+  margin-right: 7px;
+}
